@@ -41,14 +41,17 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="ToSic.Eav.Core">
-      <HintPath>..\..\Binaries of DNN, EAV, 2sxc\ToSic.Eav.Core.dll</HintPath>
+    <Reference Include="ToSic.Eav.Core, Version=4.5.0.28109, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2SexyContent\Web\bin\ToSic.Eav.Core.dll</HintPath>
     </Reference>
-    <Reference Include="ToSic.Eav.DataSources">
-      <HintPath>..\..\Binaries of DNN, EAV, 2sxc\ToSic.Eav.DataSources.dll</HintPath>
+    <Reference Include="ToSic.Eav.DataSources, Version=4.5.0.28110, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2SexyContent\Web\bin\ToSic.Eav.DataSources.dll</HintPath>
     </Reference>
-    <Reference Include="ToSic.Eav.Tokens">
-      <HintPath>..\..\Binaries of DNN, EAV, 2sxc\ToSic.Eav.Tokens.dll</HintPath>
+    <Reference Include="ToSic.Eav.Tokens, Version=4.5.0.28110, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2SexyContent\Web\bin\ToSic.Eav.Tokens.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

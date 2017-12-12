@@ -10,11 +10,15 @@ namespace ToSic.Dnn.DataSources
     /// <summary>
     /// Delivers UDT-data (now known as Form and List) to the templating engine
     /// </summary>
-    [VisualQuery(Type = DataSourceType.Source, 
+    [VisualQuery(GlobalName = "ToSic.Dnn.DataSources.DnnFormAndList",
+        PreviousNames = new []{
+            "Environment.Dnn7.DataSources.DnnFormAndList, ToSic.SexyContent",
+            "ToSic.SexyContent.DataSources.DnnFormAndList, ToSic.SexyContent" },
+        Type = DataSourceType.Source, 
         DynamicOut = true,
         ExpectsDataOfType = "|Config ToSic.SexyContent.DataSources.DnnFormAndList")] // todo: create new/own
 
-    public sealed class DnnFormAndList : BaseDataSource
+    public sealed class DnnFormAndList : ExternalDataDataSource
     {
 
         public override string LogId => "Dnn.Ds-FnL";                   // this text is added to all internal logs, so it's easier to debug
