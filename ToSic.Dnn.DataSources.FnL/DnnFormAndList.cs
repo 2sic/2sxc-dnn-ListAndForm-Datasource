@@ -10,13 +10,14 @@ namespace ToSic.Dnn.DataSources
     /// <summary>
     /// Delivers UDT-data (now known as Form and List) to the templating engine
     /// </summary>
-    [VisualQuery(GlobalName = "ToSic.Dnn.DataSources.DnnFormAndList",
+    [VisualQuery(GlobalName = "0a0924a5-ca2f-4db5-8fc7-1a21fdbb2fbb",
         PreviousNames = new []{
             "Environment.Dnn7.DataSources.DnnFormAndList, ToSic.SexyContent",
             "ToSic.SexyContent.DataSources.DnnFormAndList, ToSic.SexyContent" },
         Type = DataSourceType.Source, 
-        DynamicOut = true,
-        ExpectsDataOfType = "|Config ToSic.SexyContent.DataSources.DnnFormAndList")] // todo: create new/own
+        DynamicOut = false,
+        ExpectsDataOfType = "d98db323-7c33-4f2a-b173-ef91c0875124",
+        HelpLink = "https://github.com/2sic/dnn-datasource-form-and-list/wiki")] 
 
     public sealed class DnnFormAndList : ExternalDataDataSource
     {

@@ -16,6 +16,8 @@
     <!--in VS 2012 we exclude the packages folder -->
     <ItemGroup>     
       <InstallInclude Include="**\*.ascx" Exclude="packages\**" />
+      <!-- this is the only important addition to get the types to work... -->
+      <InstallInclude Include="**\*.json" Exclude="packages\**" />
       <InstallInclude Include="**\*.asmx" Exclude="packages\**" />
       <InstallInclude Include="**\*.css" Exclude="packages\**" />
       <InstallInclude Include="**\*.html" Exclude="packages\**" />
