@@ -48,10 +48,10 @@
       <HintPath>..\..\..\2SexyContent\Web\bin\DotNetNuke.dll</HintPath>
     </Reference>
     <Reference Include="dotnetnuke.modules.userdefinedtable">
-      <HintPath>..\..\Binaries of DNN, EAV, 2sxc\dotnetnuke.modules.userdefinedtable.dll</HintPath>
+      <HintPath>..\bin dependencies\dotnetnuke.modules.userdefinedtable.dll</HintPath>
     </Reference>
     <Reference Include="DotNetNuke.Web">
-      <HintPath>..\..\..\2SexyContent\Web\bin\DotNetNuke.Web.dll</HintPath>
+      <HintPath>..\..\2SexyContent\Web\bin\DotNetNuke.Web.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -83,7 +83,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="License.txt" />
-    <Content Include="module.css" />
     <Content Include="ReleaseNotes.txt" />
   </ItemGroup>
   <ItemGroup>

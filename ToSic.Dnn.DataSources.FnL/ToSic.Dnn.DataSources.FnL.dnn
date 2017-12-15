@@ -1,0 +1,32 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="ToSic.Dnn.DataSources.FnL" type="Module" version="01.00.00">
+      <friendlyName>ToSic.Dnn.DataSources.FnL</friendlyName>
+      <description>2sic.com ToSic.Dnn.DataSources.FnL module</description>
+      <iconFile>~/Images/icon_extensions_32px.png</iconFile>
+      <owner>
+        <name>2sic.com</name>
+        <organization>2sic.com</organization>
+        <url>https://2sxc.org/</url>
+        <email>info@2sxc.org</email>
+      </owner>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="CoreVersion">07.04.00</dependency>
+      </dependencies>
+      
+      <components>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <name>ToSic.Dnn.DataSources.FnL.dll</name>
+              <path>bin</path>
+            </assembly>
+          </assemblies>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

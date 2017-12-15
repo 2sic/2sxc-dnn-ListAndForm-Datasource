@@ -1,7 +1,7 @@
 ﻿<div class="License">
 	<h3>License</h3>
 	<p class="Owner">
-		2sic.com  <a href=https://2sxc.org/>https://2sxc.org/</a></br>
+		2sic.com  <a href="https://2sxc.org/">https://2sxc.org/</a></br>
 		Copyright (c) 2017</br>	
 		by 2sic.com</br>
 	</p>
