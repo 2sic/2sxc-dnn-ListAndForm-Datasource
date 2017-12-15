@@ -1,0 +1,14 @@
+﻿<h3>ToSic.Dnn.DataSources.FnL</h3>
+<p class="Contributor">
+	2sic.com <br />
+	<a href="mailto:info@2sxc.org">info@2sxc.org</a><br />
+	<a href=https://2sxc.org/>https://2sxc.org/</a><br />
+</p>
+<div class="License">
+	<h3>About the ToSic.Dnn.DataSources.FnL</h3>
+	<p class="Owner">
+		<b>Version 09.13.00</b><br /><br />
+	</p>
+	<p>Now a standalone, installable module</p>
+	
+</div>
