@@ -10,12 +10,13 @@ namespace ToSic.Dnn.DataSources
     /// <summary>
     /// Delivers UDT-data (now known as Form and List) to the templating engine
     /// </summary>
-    [VisualQuery(GlobalName = "0a0924a5-ca2f-4db5-8fc7-1a21fdbb2fbb",
+    [VisualQuery(
+        GlobalName = "0a0924a5-ca2f-4db5-8fc7-1a21fdbb2fbb",
+        NiceName = "Dnn FormAndList",
         PreviousNames = new []{
             "Environment.Dnn7.DataSources.DnnFormAndList, ToSic.SexyContent",
             "ToSic.SexyContent.DataSources.DnnFormAndList, ToSic.SexyContent" },
         Type = DataSourceType.Source, 
-        DynamicOut = false,
         ExpectsDataOfType = "d98db323-7c33-4f2a-b173-ef91c0875124",
         HelpLink = "https://github.com/2sic/dnn-datasource-form-and-list/wiki")] 
 
@@ -24,9 +25,12 @@ namespace ToSic.Dnn.DataSources
 
         public override string LogId => "Dnn.Ds-FnL";                   // this text is added to all internal logs, so it's easier to debug
 
-        private const string ModuleIdConfigKey = "ModuleId";            // key in the configuration list for module Id
-        private const string TitleFieldConfigKey = "TitleField";        // key in the configuration list for the title filed
-        private const string ContentTypeConfigKey = "ContentType";      // key in the configuration list for the content-type name
+        const string ModuleIdConfigKey = "ModuleId";            // key in the configuration list for module Id
+        const string TitleFieldConfigKey = "TitleField";        // key in the configuration list for the title filed
+        const string ContentTypeConfigKey = "ContentType";      // key in the configuration list for the content-type name
+        const string ModIdSetName = "ModuleId";
+        const string TitleFieldSetName = "TitleFieldName";
+        const string ContentTypeSetName = "ContentTypeName";
 
         /// <summary>
         /// Get the FnL ModuleID (which contains the data) from the configuration
@@ -50,12 +54,12 @@ namespace ToSic.Dnn.DataSources
         public DnnFormAndList()
         {
             // Specify what out-streams this data-source provides. Usually just one, called "Default"
-            Out.Add(Constants.DefaultStreamName, new DataStream(this, Constants.DefaultStreamName, GetList));
+            Provide(GetList);
 
             // Register the configurations we want as tokens, so that the values will be injected later on
-            Configuration.Add(ModuleIdConfigKey, "[Settings:ModuleId||0]");
-            Configuration.Add(TitleFieldConfigKey, "[Settings:TitleFieldName]");
-            Configuration.Add(ContentTypeConfigKey, "[Settings:ContentTypeName||FnL]");
+            ConfigMask(ModuleIdConfigKey, $"[Settings:{ModIdSetName}||0]");
+            ConfigMask(TitleFieldConfigKey, $"[Settings:{TitleFieldSetName}]");
+            ConfigMask(ContentTypeConfigKey, $"[Settings:{ContentTypeSetName}||FnL]");
         }
 
         /// <summary>
