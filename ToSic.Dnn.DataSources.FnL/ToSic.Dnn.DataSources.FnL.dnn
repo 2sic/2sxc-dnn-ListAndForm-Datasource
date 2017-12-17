@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="ToSic.Dnn.DataSources.FnL" type="Module" version="01.00.01">
+    <package name="ToSic.Dnn.DataSources.FnL" type="Module" version="01.00.02">
       <friendlyName>FormAndList DataSource for Dnn/2sxc/EAV</friendlyName>
       <description>2sic.com ToSic.Dnn.DataSources.FnL module</description>
       <iconFile>~/Images/icon_extensions_32px.png</iconFile>
@@ -23,13 +23,13 @@
             <basePath>DesktopModules\ToSic.Dnn.DataSources.FnL</basePath>
             <script type="Install">
               <path>Providers\DataProviders\SqlDataProvider</path>
-              <name>01.00.01.SqlDataProvider</name>
-              <version>01.00.01</version>
+              <name>01.00.02.SqlDataProvider</name>
+              <version>01.00.02</version>
             </script>
             <script type="UnInstall">
               <path>Providers\DataProviders\SqlDataProvider</path>
               <name>Uninstall.SqlDataProvider</name>
-              <version>01.00.01</version>
+              <version>01.00.02</version>
             </script>
           </scripts>
         </component>
@@ -100,7 +100,7 @@
             <attributes>
               <businessControllerClass>ToSic.Dnn.DataSourcesToSic.Dnn.DataSources.FnL.Components.FeatureController, ToSic.Dnn.DataSources.FnL</businessControllerClass>
               <desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
-              <upgradeVersionsList>01.00.01</upgradeVersionsList>
+              <upgradeVersionsList>01.00.02</upgradeVersionsList>
             </attributes>
           </eventMessage>
         </component>-->

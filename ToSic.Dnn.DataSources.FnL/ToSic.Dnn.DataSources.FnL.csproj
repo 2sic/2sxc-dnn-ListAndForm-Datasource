@@ -43,9 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DotNetNuke, Version=7.0.2.1, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="DotNetNuke, Version=7.4.2.216, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\2SexyContent\Web\bin\DotNetNuke.dll</HintPath>
+      <HintPath>..\..\2SexyContent\Web\bin\DotNetNuke.dll</HintPath>
     </Reference>
     <Reference Include="dotnetnuke.modules.userdefinedtable">
       <HintPath>..\bin dependencies\dotnetnuke.modules.userdefinedtable.dll</HintPath>
@@ -67,14 +67,17 @@
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="ToSic.Eav.Core">
-      <HintPath>..\..\..\2SexyContent\Web\bin\ToSic.Eav.Core.dll</HintPath>
+    <Reference Include="ToSic.Eav.Core, Version=4.5.0.32232, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\2SexyContent\Web\bin\ToSic.Eav.Core.dll</HintPath>
     </Reference>
-    <Reference Include="ToSic.Eav.DataSources">
-      <HintPath>..\..\..\2SexyContent\Web\bin\ToSic.Eav.DataSources.dll</HintPath>
+    <Reference Include="ToSic.Eav.DataSources, Version=4.5.0.40280, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\2SexyContent\Web\bin\ToSic.Eav.DataSources.dll</HintPath>
     </Reference>
-    <Reference Include="ToSic.Eav.Tokens">
-      <HintPath>..\..\..\2SexyContent\Web\bin\ToSic.Eav.Tokens.dll</HintPath>
+    <Reference Include="ToSic.Eav.Tokens, Version=4.5.0.32233, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\2SexyContent\Web\bin\ToSic.Eav.Tokens.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

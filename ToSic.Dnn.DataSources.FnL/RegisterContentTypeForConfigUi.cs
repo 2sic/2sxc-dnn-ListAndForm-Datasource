@@ -12,6 +12,7 @@ namespace ToSic.Dnn.DataSources
     {
         /// <summary>
         /// Empty constructor, so it can be used from reflection
+        /// Temporary for 2sxc 9.13, because 9.14 already has an empty constructor
         /// </summary>
         public RegisterContentTypeForConfigUi() : base(true, true, null) { }
 
