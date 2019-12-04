@@ -14,7 +14,7 @@
     <RootNamespace>ToSic.Dnn.DataSources</RootNamespace>
     <AssemblyName>ToSic.Dnn.DataSources.FnL</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -51,7 +51,7 @@
       <HintPath>..\bin dependencies\dotnetnuke.modules.userdefinedtable.dll</HintPath>
     </Reference>
     <Reference Include="DotNetNuke.Web">
-      <HintPath>..\..\2SexyContent\Web\bin\DotNetNuke.Web.dll</HintPath>
+      <HintPath>..\..\2sxc-dnn742\Website\bin\DotNetNuke.Web.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -67,17 +67,11 @@
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="ToSic.Eav.Core, Version=4.5.0.32232, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\2SexyContent\Web\bin\ToSic.Eav.Core.dll</HintPath>
+    <Reference Include="ToSic.Eav.Core">
+      <HintPath>..\..\2sxc-dnn742\Website\bin\ToSic.Eav.Core.dll</HintPath>
     </Reference>
-    <Reference Include="ToSic.Eav.DataSources, Version=4.5.0.40280, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\2SexyContent\Web\bin\ToSic.Eav.DataSources.dll</HintPath>
-    </Reference>
-    <Reference Include="ToSic.Eav.Tokens, Version=4.5.0.32233, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\2SexyContent\Web\bin\ToSic.Eav.Tokens.dll</HintPath>
+    <Reference Include="ToSic.Eav.DataSources">
+      <HintPath>..\..\2sxc-dnn742\Website\bin\ToSic.Eav.DataSources.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -106,7 +100,9 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include=".data\contenttypes\System.d98db323-7c33-4f2a-b173-ef91c0875124.json" />
   </ItemGroup>
@@ -126,9 +122,7 @@
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>
           </DevelopmentServerVPath>
-          <IISUrl>http://dnn911nv1.dnndev.me/desktopmodules/ToSic.Dnn.DataSources.FnL</IISUrl>
-          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://dnn911nv1.dnndev.me</IISAppRootUrl>
+          <IISUrl>http://localhost:57784/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

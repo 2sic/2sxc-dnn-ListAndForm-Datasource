@@ -2,7 +2,7 @@
 using DotNetNuke.Modules.UserDefinedTable;
 using ToSic.Eav;
 using ToSic.Eav.DataSources;
-using ToSic.Eav.DataSources.VisualQuery;
+using ToSic.Eav.DataSources.Queries;
 
 namespace ToSic.Dnn.DataSources
 {
@@ -20,7 +20,7 @@ namespace ToSic.Dnn.DataSources
         ExpectsDataOfType = "d98db323-7c33-4f2a-b173-ef91c0875124",
         HelpLink = "https://github.com/2sic/dnn-datasource-form-and-list/wiki")] 
 
-    public sealed class DnnFormAndList : ExternalDataDataSource
+    public sealed class DnnFormAndList : ExternalData
     {
 
         public override string LogId => "Dnn.Ds-FnL";                   // this text is added to all internal logs, so it's easier to debug
@@ -66,10 +66,10 @@ namespace ToSic.Dnn.DataSources
         /// Internal helper that returns the entities - actually just retrieving them from the attached Data-Source
         /// </summary>
         /// <returns></returns>
-        private IEnumerable<Eav.Interfaces.IEntity> GetList() => LoadFnL().List;
+        private IEnumerable<Eav.Data.IEntity> GetList() => LoadFnL().List;
 
 
-        private DataTableDataSource LoadFnL()
+        private DataTable LoadFnL()
         {
             // check if already loaded, if yes, return that
             if (_dtDs != null) return _dtDs;
@@ -82,7 +82,7 @@ namespace ToSic.Dnn.DataSources
             var ds = udt.GetDataSet(ModuleId);
 
             // now build a DataTableDataSource to pass on
-            _dtDs = DataSource.GetDataSource<DataTableDataSource>(valueCollectionProvider: ConfigurationProvider, parentLog: Log);
+            _dtDs = DataSource.GetDataSource<DataTable>(configLookUp: ConfigurationProvider, parentLog: Log);
             _dtDs.Source = ds.Tables["Data"];           // the data-table of FnL/UDT
             _dtDs.EntityIdField = "UserDefinedRowId";   // default column created by FnL/UDT
             _dtDs.ContentType = ContentType;            // a type name what these items are called afterwards
@@ -98,7 +98,7 @@ namespace ToSic.Dnn.DataSources
                 : TitleField;
             return _dtDs;
         }
-        private DataTableDataSource _dtDs;
+        private DataTable _dtDs;
 
 
 
