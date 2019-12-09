@@ -1,6 +1,6 @@
 # dnn-datasource-form-and-list
 
-The data source for LnF in DNN (previously called UDT = Universal Data Table)
+This is a data source for the [DNN FormAndList (FnL)](https://github.com/DNNCommunity/DNN.FormAndList) module - formerly known as **User Defined Table (UDT)**.
 
 This is an installable DNN module which adds a DataSource to the VisualQuery providing FnL data. 
 
